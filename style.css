@@ -1,0 +1,257 @@
+@keyframes animacao {
+    from { background-color: rgb(190, 197, 231);}
+    to {background-color: rgb(15, 15, 228);}
+}
+
+@keyframes animacao2 {
+    0% {}
+    30% {width: 100px}
+    60% {background-color: rgb(123, 22, 148);}
+    80% { left: 100px; background-color: rgb(184, 133, 231);}
+    100% {height: 100px;}
+}
+
+@keyframes animacao3 {
+    from {left: 0%;}
+    to {left: 200px;background-color: #e2afcf;}
+    
+}
+
+@keyframes  animacao4 {
+    from{left: 0;}
+    to {left: 500px;}
+}
+
+@keyframes animacao5 {
+    0% {left: 0px;}
+    25% {left: 25x;background-color: rgb(178, 120, 207);}
+    60% {left:  100px; background-color: #755283;}
+    100% {left: 30px; background-color: #a991b3;}
+}
+
+.animation-div {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(135, 135, 180);
+    animation-name: animacao;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.animation-div2 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(74, 8, 102);
+    animation-name: animacao2;
+    animation-duration: 6s;
+    position: relative;
+    left: 400px;
+    animation-iteration-count: infinite;
+
+}
+
+.animation-div3 {
+    width: 100px;
+    height: 100px;
+    background-color: #5fc5d4;
+    position: relative;
+    animation-name: animacao3;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    /*animation-iteration-count: 3;*/
+    animation-iteration-count: infinite;
+}
+
+.box {
+    background-color: #900dc4;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    animation-name: animacao4;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#animation-div4{
+    animation-timing-function: linear;
+
+}
+
+#animation-div5 {
+    animation-timing-function: ease;
+    
+}
+
+#animation-div6{
+    animation-timing-function: ease-in;
+}
+
+#animation-div7 {
+    animation-timing-function: ease-out;
+}
+
+#animation-div8 {
+    animation-timing-function: ease-in-out;
+}
+/*shorthand - nome, duração, timing-function, delay, iteration */
+#animation-div9 {
+    background-color: darkorchid;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    animation: animacao5 8s ease-out 4s infinite;
+}
+
+.btn {
+    display: block;
+    position: relative;
+    padding: 10px;
+    margin-bottom: 25px;
+    width: 150px;
+    height: 75px;
+    color:rgb(74, 8, 102);
+    text-transform: uppercase;
+    background-color: #900dc4;
+    border: 1px solid #900dc4;
+    cursor: pointer;
+    text-align: center;
+
+}
+.btn:hover {
+    color: #333;
+    background-color: #FFF;
+}
+
+.transition {
+    width: 50px;
+    height: 100px;
+    background-color: #a991b3;
+    transition: 4s
+}
+
+.transition:hover {
+    width: 50px;
+    height: 100px;
+    background-color: #a991b3;
+    width: 300px;
+}
+
+.div-calc {
+    height: 250px;
+    width: 500px;
+    position: relative;
+    margin: 20px;
+    background-color: #c5b9ca;
+    border: 1px solid #900dc4;
+}
+
+.innerdiv-calc {
+    height: 50px;
+    margin: 10px;
+    position: relative;
+    background-color: #900dc4;
+}
+
+.calc1 {
+    width: calc(50% + 50px);
+}
+
+.calc2 {
+    width: calc(50% - 50px);
+}
+
+.calc3 {
+    width: calc(50% * 2);
+    margin: 0;
+}
+
+.calc4 {
+    width: calc(50% / 2);
+}
+
+
+.gradient-box {
+    width: 500px;
+    height: 200px;
+    position: relative;
+    margin: 20px;
+}
+
+.gradient1 {
+    background-image: linear-gradient(purple,blue);
+}
+
+.gradient2 {
+    background-image: linear-gradient(to right,purple,blue);
+}
+
+.gradient3 {
+    background-image: linear-gradient(to left, red, yellow);
+}
+
+.gradient4 {
+    background-image: linear-gradient(to top, rgb(204, 25, 25), rgb(241, 162, 117));
+}
+
+.gradient5 {
+    background-image: linear-gradient(to top right, rgb(231, 147, 203), rgb(76, 76, 199));
+}
+
+.gradient6 {
+    background-image: linear-gradient(rgb(42, 42, 155), rgb(235, 170, 235), rgb(107, 107, 204));
+}
+
+.gradient6 {
+    background-image: radial-gradient(rgb(177, 112, 202), rgb(235, 170, 235), rgb(107, 107, 204));
+}
+
+.gradient7 {
+    background-image: radial-gradient(rgb(112, 143, 202)10%, rgb(231, 120, 231)30%, rgb(126, 49, 197));
+}
+
+.gradient7 {
+    background-image: radial-gradient(circle, rgb(112, 143, 202), rgb(231, 120, 231), rgb(126, 49, 197));
+}
+
+.mediaquery {
+    height: 200px;
+    width: 1200px;
+    background-color: #a991b3;
+}
+
+@media (max-width: 1000px) {
+    .mediaquery {
+        width: 500px;
+        background-color: #5fc5d4;
+    }
+}
+
+@media (max-width: 768px) {
+    .mediaquery {
+        width: 300px;
+        background-color: #9cd7fa;
+    }
+}
+
+@media (max-width: 512px) {
+    .mediaquery {
+        width: 200px;
+        background-color: #edf5f5;
+    }
+}
+
+.div-border {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    margin: 20px;
+}
+
+.border-radius1 {
+    border-radius: 50%;
+}
+
+.border-radius2 {
+    border-top-right-radius: 20px;
+}
+]
